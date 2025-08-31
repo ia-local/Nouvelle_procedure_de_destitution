@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votez pour l'Article 68 de la Constitution</title>
+    <!-- Le CSS est inclus directement dans la balise <style> pour simplifier le fichier -->
+    <style>
+        :root {
+            --primary-color: #004080; /* Bleu marine */
+            --secondary-color: #f0f4f8; /* Bleu très clair */
+            --accent-color: #e02f2f; /* Rouge vif pour l'action */
+            --text-color: #333;
+            --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header, footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro, .details {
+            margin-bottom: 2rem;
+        }
+
+        .call-to-action {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: white;
+            background-color: var(--accent-color);
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #b82525;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            padding: 1rem;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Un vote pour la justice et l'intégrité</h1>
+        <p>Votre voix compte pour une France plus juste.</p>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Pourquoi votre vote est crucial ?</h2>
+            <p>Dans un contexte où les fraudes financières et la corruption minent la confiance, l'article 68 de la Constitution offre un levier puissant pour la destitution du Président de la République en cas de manquement grave. Voter en faveur de cette pétition est un acte citoyen essentiel pour renforcer la démocratie et la transparence. C'est le moment de nous faire entendre.</p>
+        </section>
+        
+        <section class="call-to-action">
+            <h3>Passez à l'action maintenant !</h3>
+            <p>Rejoignez les milliers de citoyens déjà mobilisés. Un simple clic peut tout changer.</p>
+            <!-- Le lien s'ouvre dans un nouvel onglet pour que l'utilisateur ne quitte pas votre page -->
+            <a href="https://petitions.assemblee-nationale.fr/initiatives/i-2743" target="_blank" rel="noopener noreferrer" class="cta-button">
+                👉 Je vote pour l'Article 68
+            </a>
+        </section>
+
+        <section class="details">
+            <h4>En savoir plus sur l'Article 68</h4>
+            <p>L'Article 68 prévoit les conditions dans lesquelles le Parlement peut destituer le Président. C'est un mécanisme de contrôle vital pour notre démocratie. Pour en savoir plus, consultez les sources officielles et le texte de la pétition.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Initiative citoyenne pour la transparence.</p>
+    </footer>
+
+    <!-- Le JavaScript est inclus à la fin du corps du document pour ne pas bloquer le chargement de la page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctaButton = document.querySelector('.cta-button');
+
+            ctaButton.addEventListener('click', (event) => {
+                console.log('Bouton de vote cliqué ! Redirection...');
+            });
+        });
+    </script>
+</body>
+</html>
